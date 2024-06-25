@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 ''' BasicCache class '''
-from base_class import BaseCaching
+from BaseCaching import BaseCaching
 
 
 class BasicCache(BaseCaching):

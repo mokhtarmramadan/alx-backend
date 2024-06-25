@@ -15,7 +15,7 @@ class FIFOCache(BaseCaching):
                     key not in list(self.cache_data.keys())):
                 first_key = list(self.cache_data.keys())[0]
                 self.cache_data.pop(first_key)
-                print("DISCARD: ", first_key)
+                print("DISCARD:", first_key)
             self.cache_data[key] = item
 
     def get(self, key):
