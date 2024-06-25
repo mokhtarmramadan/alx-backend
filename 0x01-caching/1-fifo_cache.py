@@ -20,5 +20,5 @@ class FIFOCache(BaseCaching):
 
     def get(self, key):
         ''' Gets a certain item by it's key '''
-        value = slef.cache_data.get(key, None)
+        value = self.cache_data.get(key, None)
         return value
