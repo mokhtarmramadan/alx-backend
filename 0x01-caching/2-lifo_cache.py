@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 ''' LIFOCache class '''
-from base_class import BaseCaching
+from base_caching import BaseCaching
 
 
 class LIFOCache(BaseCaching):
