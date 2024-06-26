@@ -18,7 +18,7 @@ class LRUCache(BaseCaching):
                 if key not in list(self.cache_data.keys()):
                     discard_element = LRUCache.elements_key.pop(0)
                     del self.cache_data[discard_element]
-                    print("Discard:", discard_element)
+                    print("DISCARD:", discard_element)
                 else:
                     LRUCache.elements_key.remove(key)
             self.cache_data[key] = item
