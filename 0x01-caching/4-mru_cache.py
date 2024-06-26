@@ -17,7 +17,7 @@ class MRUCache(BaseCaching):
                 if key not in list(self.cache_data.keys()):
                     discard_element = MRUCache.elements_key.pop(0)
                     del self.cache_data[discard_element]
-                    print("DISCARD", discard_element)
+                    print("DISCARD:", discard_element)
                 else:
                     MRUCache.elements_key.remove(key)
             MRUCache.elements_key.insert(0, key)
