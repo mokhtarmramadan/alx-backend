@@ -11,7 +11,7 @@ class MRUCache(BaseCaching):
         ''' Assigns key to it's item in the chache dict
             if data is more than the max_limit we pop
             we discard the Most recently used element '''
-        if key is not None or item is not None:
+        if key is not None and item is not None:
             if len(self.cache_data) >= BaseCaching.MAX_ITEMS:
                 discard_element = ''
                 if key not in list(self.cache_data.keys()):
